@@ -1,7 +1,4 @@
 # setup-liferay-fragment-test
-
-![npm](https://img.shields.io/npm/v/setup-liferay-fragment-test)
-
 setup-liferay-fragment-test exports one tiny function that reads a local fragment.json config for a Liferay fragment, then reads the HTML, CSS, and JS files it points to and loads them into the DOM. (It also parses Freemarker in the HTML.) This is useful for automated testing of Liferay fragments.
 
 ## Installation
