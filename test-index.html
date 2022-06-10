@@ -1,0 +1,14 @@
+<div class="test-fragment">
+  <div class="tab-panel">
+    [#list 0..configuration.numberOfTabs-1 as i]
+    <div
+      class="tab-panel-item"
+      data-fragment-namespace="${fragmentEntryLinkNamespace}"
+      id="tabPanel${i+1}"
+      role="tabpanel"
+    >
+    Hello I am a tab
+    </div>
+    [/#list]
+  </div>
+</div>

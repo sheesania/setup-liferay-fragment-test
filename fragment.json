@@ -1,0 +1,6 @@
+{
+  "cssPath": "test-styles.css",
+  "htmlPath": "test-index.html",
+  "jsPath": "test-main.js",
+  "name": "Test Fragment"
+}
