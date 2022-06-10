@@ -1,4 +1,8 @@
 {
   "name": "setup-liferay-fragment-test",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "description": "Load a Liferay HTML/CSS/JS fragment into the DOM to use for testing",
+  "license": "MIT",
+  "repository": "sheesania/setup-liferay-fragment-test",
+  "main": "index.js"
 }
