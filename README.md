@@ -10,7 +10,7 @@ yarn add setup-liferay-fragment-test --save-dev
 ```
 
 ## Usage
-A simple example of how to use setup-liferay-fragment-test is right here in this repository! See [index.test.js] for some basic Jest + DOM Testing Library tests that load the sample fragment in this repository and then poke at it.
+A simple example of how to use setup-liferay-fragment-test is right here in this repository! See index.test.js for some basic Jest + DOM Testing Library tests that load the sample fragment in this repository and then poke at it.
 
 ## About
 This is a super basic module I cooked up in a couple hours. Feel free to contribute changes.
