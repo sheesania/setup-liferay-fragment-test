@@ -5,7 +5,7 @@ const testConfiguration = { numberOfTabs: 4 };
 
 describe("setup-liferay-fragment-test", () => {
   beforeAll((done) => {
-    setupLiferayFragmentTest(testConfiguration, "mock-namespace", done);
+    setupLiferayFragmentTest(__dirname, testConfiguration, "mock-namespace", done);
   });
 
   it("loads CSS", () => {

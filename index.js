@@ -2,18 +2,18 @@ const fs = require("fs");
 const path = require("path");
 const Freemarker = require("freemarker");
 
-module.exports = (configuration, namespace, done) => {
+module.exports = (fragmentFolder, configuration, namespace, done) => {
   const fragmentConfig = JSON.parse(
-    fs.readFileSync(path.join(__dirname, "fragment.json"))
+    fs.readFileSync(path.join(fragmentFolder, "fragment.json"))
   );
   const { cssPath, htmlPath, jsPath } = fragmentConfig;
 
-  const css = fs.readFileSync(path.join(__dirname, cssPath));
+  const css = fs.readFileSync(path.join(fragmentFolder, cssPath));
   const style = document.createElement("style");
   style.innerHTML = css;
   document.head.appendChild(style);
 
-  const html = fs.readFileSync(path.join(__dirname, htmlPath));
+  const html = fs.readFileSync(path.join(fragmentFolder, htmlPath));
   const freemarker = new Freemarker({ tagSyntax: "squareBracket" });
   freemarker.render(
     html,
