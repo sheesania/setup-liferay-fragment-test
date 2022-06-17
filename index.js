@@ -33,7 +33,7 @@ module.exports = (fragmentFolder, configuration, namespace, done) => {
       window.fragmentElement = div;
       window.fragmentNamespace = namespace;
       window.configuration = configuration;
-      require("./" + jsPath);
+      require(path.join(fragmentFolder, jsPath));
       done();
     }
   );
